@@ -111,15 +111,18 @@ function question11(){
     var accel = parseFloat(document.getElementById("q11.accel").value);
     var t = parseFloat(document.getElementById("q11.t").value);
 
-    var ax = accel * Math.cos(angle);
-    var ay = accel * Math.sin(angle);
+    var x_en = 0.5 * accel*t*t*Math.cos(angle);
+    var y_en = 0.5 * accel*t*t*Math.sin(angle);
+    var vx_en = accel*t*Math.cos(angle);
+    var vy_en = accel*t*Math.sin(angle);
+    var b = -1.0*accel*t*Math.sin(angle);
+    var c = -0.5*accel*t*t*Math.sin(angle);
+    var tim = t+(Math.sqrt(b*b-4*4.9*c)-b)/(2*4.9);
+    var tym = vy_en/9.8;
+    var ymax = y_en+vy_en*tym - 4.9*tym*tym;
+    var xim = x_en + (tim-t) * vx_en;
 
-    var vyf = ay * t;
-    var vxf = ax * t;
-
-    var t2 = (-vyf-Math.sqrt(vyf*vyf-4*(-4.9)*(0.5*25*25*ay)))/(2*-4.9);
-
-    document.getElementById("q11.a").innerHTML = t + t2 + " s";
-    document.getElementById("q11.b").innerHTML = (vyf*vyf)/(2*9.8) + 0.5*ay*25*25 + " m";
-    document.getElementById("q11.c").innerHTML = vxf * t2 + 0.5*ax*25*25 + " m";
+    document.getElementById("q11.a").innerHTML = tim + " s";
+    document.getElementById("q11.b").innerHTML = ymax + " m";
+    document.getElementById("q11.c").innerHTML = xim + " m";
 }
