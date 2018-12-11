@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <title>Kevin James Lenton Phsyics</title>
+    <link rel="stylesheet" href="../other/ww.css">
+    <script type="text/javascript" src="../js/ww10.js"></script>
+    <link rel="icon" href="icon.jpg">
+    <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-127739658-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-127739658-1');
+    </script>
+</head>
+<body>
+    <h1 class="hh">WebWork 10 Conservation of Energy</h1>
+
+    <div class="dd" name="q1">
+        <h2 class="hh">Question 1</h2>
+        <div class="dd2">
+            Distance L = <input type="text" id="q1.l"><br>
+            Distance D = <input type="text" id="q1.d"><br>
+            <button type="button" onclick="question1();">Calculate</button>
+            <p id="q1.lowspeed"></p>
+            <p id="q1.highspeed"></p>
+        </div>
+    </div>
+
+    <div class="dd" name="q2">
+        <h2 class="hh">Question 2</h2>
+        <div class="dd2">
+            Mass = <input type="text" id="q2.m"><br>
+            Length = <input type="text" id="q2.l"><br>
+            C of KF = <input type="text" id="q2.ckf"><br>
+            Height = <input type="text" id="q2.h"><br>
+            <button type="button" onclick="question2();">Calculate</button>
+            <p id="q2.a"></p>
+        </div>
+    </div>
+
+    <div class="dd" name="q3">
+        <h2 class="hh">Question 3</h2>
+        <div class="dd2">
+            Mass = <input type="text" id="q3.m"><br>
+            K Constant = <input type="text" id="q3.k"><br>
+            Spring Compression = <input type="text" id="q3.l"><br>
+            <button type="button" onclick="question3();">Calculate</button>
+            <p id="q3.a"></p>
+            <p id="q3.b"></p>
+            <p id="q3.c"></p>
+        </div>
+    </div>
+    
+    <div class="dd" name="q4">
+        <h2 class="hh">Question 4</h2>
+        <div class="dd2">
+            Mass = <input type="text" id="q4.m"><br>
+            Height = <input type="text" id="q4.h"><br>
+            K Constant = <input type="text" id="q4.k"><br>
+            <button type="button" onclick="question4();">Calculate</button>
+            <p id="q4.a"></p>
+            <p id="q4.b"></p>
+        </div>
+    </div>
+
+    <div class="dd" name="q5">
+        <h2 class="hh">Question 5</h2>
+        <div class="dd2">
+            Mass = <input type="text" id="q5.m"><br>
+            Distance h = <input type="text" id="q5.d"><br>
+            Radius = <input type="text" id="q5.r"><br>
+            <button type="button" onclick="question5();">Calculate</button>
+            <p id="q5.a"></p>
+            <p id="q5.b"></p>
+            <p id="q5.c"></p>
+        </div>
+    </div>
+
+    <div class="dd" name="q6">
+        <h2 class="hh">Question 6</h2>
+        <div class="dd2">
+            Mass = <input type="text" id="q6.m"><br>
+            Distance d = <input type="text" id="q6.d"><br>
+            K Constant = <input type="text" id="q6.k"><br>
+            <button type="button" onclick="question6();">Calculate</button>
+            <p id="q6.a"></p>
+        </div>
+    </div>
+
+    <div class="dd" name="q7">
+        <h2 class="hh">Question 7</h2>
+        <div class="dd2">
+            Mass 1 = <input type="text" id="q7.m1"><br>
+            K Constant = <input type="text" id="q7.k"><br>
+            Mass 2 = <input type="text" id="q7.m2"><br>
+            Extension = <input type="text" id="q7.d"><br>
+            <button type="button" onclick="question7();">Calculate</button>
+            <p id="q7.a"></p>
+            <p id="q7.b"></p>
+        </div>
+    </div>
+
+    <div class="dd" name="q8">
+        <h2 class="hh">Question 8</h2>
+        <div class="dd2">
+            Mass = <input type="text" id="q8.mass"><br>
+            K Constant = <input type="text" id="q8.k"><br>
+            Distance = <input type="text" id="q8.d"><br>
+            Distance Travelled = <input type="text" id="q8.d2"><br>
+            <button type="button" onclick="question8();">Calculate</button>
+            <p id="q8.a"></p>
+        </div>
+    </div>
+
+    <div class="dd" name="q9">
+        <h2 class="hh">Question 9</h2>
+        <div class="dd2">   
+            Mass = <input type="text" id="q9.m"><br>
+            Angle = <input type="text" id="q9.angle"><br>
+            Distance = <input type="text" id="q9.d"><br>
+            K Constant = <input type="text" id="q9.k"><br>
+            <button type="button" onclick="question9();">Calculate</button>
+            <p id="q9.a"></p>
+            <p id="q9.b"></p>
+        </div>
+    </div>
+
+    <div class="dd" name="q10">
+        <h2 class="hh">Question 10</h2>
+        <div class="dd2">
+            Mass = <input type="text" id="q10.m"><br>
+            Speed = <input type="text" id="q10.v"><br>
+            C of KF = <input type="text" id="q10.ckf"><br>
+            Angle = <input type="text" id="q10.angle"><br>
+            <button type="button" onclick="question10();">Calculate</button>
+            <p id="q10.a"></p>
+            <p id="q10.b"></p>
+            <p id="q10.c"></p>
+        </div>
+    </div>
+
+    <div class="dd" name="q11">
+            <h2 class="hh">Question 11</h2>
+            <div class="dd2">
+                Angle = <input type="text" id="q11.angle"><br>
+                Acceleration = <input type="text" id="q11.accel"><br>
+                Time = <input type="text" id="q11.t"><br>
+                <button type="button" onclick="question11();">Calculate</button>
+                <p id="q11.a"></p>
+                <p id="q11.b"></p>
+                <p id="q11.c"></p>
+            </div>
+        </div>
+
+    </div>
+</body>
+

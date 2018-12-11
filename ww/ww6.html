@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <title>Kevin James Lenton Phsyics</title>
+    <link rel="stylesheet" href="../other/ww.css">
+    <script type="text/javascript" src="../js/ww6.js"></script>
+    <link rel="icon" href="icon.jpg">
+    <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-127739658-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-127739658-1');
+    </script>
+</head>
+<body>
+    <h1 class="hh">WebWorks 6 Friction</h1>
+
+    <div class="dd" name="q1">
+        <div class="dd2">
+            <h2 class="hh">Question 1</h2>
+            <p>The coefficient of static friction is: <b>generally larger than the coefficient of kinetic friction</b></p>
+            <p>The force of friction is described by: <b>a model of friction</b></p>
+            <p>The effect of friction can... <b>all of the above</b></p>
+        </div>
+    </div>
+
+    <div class="dd" name="q2">
+        <h2 class="hh">Question 2</h2>
+        <div class="dd2">
+            Mass = <input type="text" id="q2.mass"><br>
+            C SF = <input type="text" id="q2.csf"><br>
+            C KF = <input type="text" id="q2.ckf"><br>
+            Force 1 = <input type="text" id="q2.f1"><br>
+            Force 2 = <input type="text" id="q2.f2"><br>
+            Force 3 = <input type="text" id="q2.f3"><br>
+            Force 4 = <input type="text" id="q2.f4"><br>
+            <button type="button" onclick="question2();">Calculate</button>
+            <p id="q2.nf"></p>
+            <p id="q2.msf"></p>
+            <p id="q2.friction1"></p>
+            <p id="q2.friction2"></p>
+            <p id="q2.friction3"></p>
+            <p id="q2.friction4"></p>
+        </div>
+    </div>
+
+    <div class="dd" name="q3">
+        <h2 class="hh">Question 3</h2>
+        <div class="dd2">
+            Mass = <input type="text" id="q3.mass"><br>
+            C SF = <input type="text" id="q3.csf"><br>
+            C KF = <input type="text" id="q3.ckf"><br>
+            First Angle = <input type="text" id="q3.firstangle"><br>
+            Angle 1 = <input type="text" id="q3.angle1"><br>
+            Angle 2 = <input type="text" id="q3.angle2"><br>
+            Angle 3 = <input type="text" id="q3.angle3"><br>
+            Angle 4 = <input type="text" id="q3.angle4"><br>
+            <button type="button" onclick="question3();">Calculate</button>
+            <p id="q3.nf"></p>
+            <p id="q3.msf"></p>
+            <p id="q3.xcw"></p>
+            <p id="q3.angle"></p>
+            <p id="q3.fsatangle"></p>
+            <p id="q3.1f"></p>
+            <p id="q3.2f"></p>
+            <p id="q3.3f"></p>
+            <p id="q3.4f"></p>
+        </div>
+    </div>
+
+    <div class="dd" name="q4">
+        <h2 class="hh">Question 4</h2>
+        <div class="dd2">
+            Mass 1 = <input type="text" id="q4.mass1"><br>
+            Mass 2 = <input type="text" id="q4.mass2"><br>
+            Angle = <input type="text" id="q4.angle"><br>
+            C KF = <input type="text" id="q4.ckf"><br>
+            <button type="button" onclick="question4();">Calculate</button>
+            <p id="q4.csf"></p>
+            <p id="q4.uaccel"></p>
+            <p id="q4.daccel"></p>
+        </div>
+    </div>
+
+    <div class="dd" name="q5">
+        <h2 class="hh">Question 5</h2>
+        <div class="dd2">
+            Mass = <input type="text" id="q5.mass"><br>
+            Angle = <input type="text" id="q5.angle"><br>
+            C KF 1 = <input type="text" id="q5.ckf1"><br>
+            C KF 2 = <input type="text" id="q5.ckf2"><br>
+            <button type="button" onclick="question5();">Calculate</button>
+            <p id="q5.accel"></p>
+            <p id="q5.tension"></p>
+        </div>
+    </div>
+
+    <div class="dd" name="q6">
+        <h2 class="hh">Question 6</h2>
+        <div class="dd2">
+            Mass 1 = <input type="text" id="q6.mass1"><br>
+            Mass 2 = <input type="text" id="q6.mass2"><br>
+            Force = <input type="text" id="q6.force"><br>
+            Angle = <input type="text" id="q6.angle"><br>
+            C KF = <input type="text" id="q6.ckf"><br>
+            <button type="button" onclick="question6();">Calculate</button>
+            <p id="q6.accel"></p>
+        </div>
+    </div>
+
+    <div class="dd" name="q7">
+        <h2 class="hh">Question 7</h2>
+        <div class="dd2">
+            Weight = <input type="text" id="q7.weight"><br>
+            Angle = <input type="text" id="q7.angle"><br>
+            C SF = <input type="text" id="q7.csf"><br>
+            C KF = <input type="text" id="q7.ckf"><br>
+            <button type="button" onclick="question7();">Calculate</button>
+            <p id="q7.mmts"></p>
+            <p id="q7.mmtm"></p>
+            <p id="q7.mfup"></p>
+        </div>
+    </div>
+
+
+    <div class="dd" name="q8">
+        <h2 class="hh">Question 8</h2>
+        <div class="dd2">
+            Mass 1 = <input type="text" id="q8.mass1"><br>
+            Mass 2 = <input type="text" id="q8.mass2"><br>
+            C KF 1 = <input type="text" id="q8.ckf1"><br>
+            C KF 2 = <input type="text" id="q8.ckf2"><br>
+            Force F = <input type="text" id="q8.force"><br>
+            <button type="button" onclick="question8();">Calculate</button>
+            <p id="q8.accel1"></p>
+            <p id="q8.accel2"></p>
+        </div>
+    </div>
+    
+    <div class="dd" name="q9">
+        <h2 class="hh">Question 9</h2>
+        <div class="dd2">
+            Mass 1 = <input type="text" id="q9.mass1"><br>
+            Mass 2 = <input type="text" id="q9.mass2"><br>
+            C SF = <input type="text" id="q9.csf"><br>
+            <button type="button" onclick="question9();">Calculate</button>
+            <p id="q9.force"></p>
+        </div>
+    </div>
+
+    <div class="dd" name="q10">
+        <h2 class="hh">Question 10</h2>
+
+        <div class="dd2">
+            Number next to "(1 point)" at the top = <input type="text" id="q10.n"><br>
+            Mass 1 = <input type="text" id="q10.mass1"><br>
+            Mass 2 = <input type="text" id="q10.mass2"><br>
+            Angle = <input type="text" id="q10.angle"><br>
+            C KF = <input type="text" id="q10.ckf"><br>
+            C SF = <input type="text" id="q10.csf"><br>
+            Mass 3 = <input type="text" id="q10.mass3"><br>
+            <p>Note: The number next to '(1 point)' is either 1 or 0.</p>
+            <p>This might not give the correct answer.</p>
+            <p>Updated October 22nd, 2018 06:05:15PM</p>
+            <button type="button" onclick="question10();">Calculate</button>
+            <p id="q10.friction1"></p>
+            <p id="q10.tension1"></p>
+            <p id="q10.friction2"></p>
+            <p id="q10.tension2"></p>
+        </div>
+    </div>
+
+    <div class="dd" name="q11">
+        <h2 class="hh">Question 11</h2>
+        <div class="dd2">
+            Mass 1 = <input type="text" id="q11.mass1"><br>
+            Mass 2 = <input type="text" id="q11.mass2"><br>
+            <button type="button" onclick="question11();">Calculate</button>
+            <p id="q11.accel1"></p>
+            <p id="q11.accel2"></p>
+        </div>
+    </div>
+</body>
+
