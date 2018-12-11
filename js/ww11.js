@@ -38,11 +38,16 @@ function question3(){
 }
 
 function question4(){
-    var m = parseFloat(document.getElementById("q3.m").value);
-    var v = parseFloat(document.getElementById("q3.v").value);
-    var angle = parseFloat(document.getElementById("q3.angle").value) * (Math.PI / 180);
+    var m = parseFloat(document.getElementById("q4.m").value);
+    var v = parseFloat(document.getElementById("q4.v").value);
+    var angle = parseFloat(document.getElementById("q4.angle").value) * (Math.PI / 180);
 
-    
+    var vx = Math.cos(angle) * v;
+    var vy = Math.sin(angle) * v;
+    var t = vy/9.8;
+    var v2 = (m*vx)/(m/2);
+
+    document.getElementById("q4.a").innerHTML = (v2 * t) + (t * vx) + " m";
 }
 
 function question5(){
@@ -60,7 +65,15 @@ function question5(){
 }
 
 function question6(){
-    
+    var m1 = parseFloat(document.getElementById("q6.m1").value);
+    var m2 = parseFloat(document.getElementById("q6.m2").value);
+    var d = parseFloat(document.getElementById("q6.d").value)/100;
+    var v1 = parseFloat(document.getElementById("q6.v1").value);
+
+    var v2 = (m1*v1)/m2;
+
+    document.getElementById("q6.a").innerHTML = v2 + " m/s";
+    document.getElementById("q6.b").innerHTML = (0.5*m1*v1*v1+0.5*m2*v2*v2)/(0.5*d*d) + " N/m";
 }
 
 function question7(){
