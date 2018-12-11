@@ -51,8 +51,13 @@ function question6(){
     var m = parseFloat(document.getElementById("q6.m").value);
     var d = parseFloat(document.getElementById("q6.d").value);
     var k = parseFloat(document.getElementById("q6.k").value);
+    var f = parseFloat(document.getElementById("q6.f").value);
 
-    document.getElementById("q6.a").innerHTML = Math.sqrt((m*9.8*d)/(0.5*k)) + " m";
+    var a = 0.5 * k;
+    var b = -1. * (m * 9.8 - f);  
+    var c = -1. * (m * 9.8 - f) * d;  
+
+    document.getElementById("q6.a").innerHTML = (-1.*b + sqrt(b*b-4.0*a*c))/(2.0*a) + " m";
 }
 
 function question7(){
