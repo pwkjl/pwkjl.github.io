@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <title>Kevin James Lenton Phsyics</title>
+    <link rel="stylesheet" href="ww.css">
+    <script type="text/javascript" src="ww8.js"></script>
+    <link rel="icon" href="icon.jpg">
+    <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-127739658-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-127739658-1');
+    </script>
+</head>
+<body>
+    <h1 class="hh">WebWorks 8 Static Equilibrium</h1>
+
+    <div class="dd" name="q1">
+        <h2 class="hh">Question 1</h2>
+        <div class="dd2">
+            Mass 1 = <input type="text" id="q1.mass1"><br>
+            Mass 2 = <input type="text" id="q1.mass2"><br>
+            Length = <input type="text" id="q1.length"><br>
+            <button type="button" onclick="question1();">Calculate</button>
+            <p id="q1.sitlength"></p>
+        </div>
+    </div>
+
+    <div class="dd" name="q2">
+        <h2 class="hh">Question 2</h2>
+        <div class="dd2">
+            Bench Length = <input type="text" id="q2.benchlength"><br>
+            Length from end for legs = <input type="text" id="q2.legslength"><br>
+            Plank Mass = <input type="text" id="q2.plankmass"><br>
+            Box Mass = <input type="text" id="q2.boxmass"><br>
+            Box length from end = <input type="text" id="q2.boxlength"><br>
+            <button type="button" onclick="question2();">Calculate</button>
+            <p id="q2.leftnormal"></p>
+            <p id="q2.rightnormal"></p>
+        </div>
+    </div>
+
+    <div class="dd" name="q3">
+        <h2 class="hh">Question 3</h2>
+        <div class="dd2">
+            Plank Length = <input type="text" id="q3.plen"><br>
+            Left Balance = <input type="text" id="q3.lbal"><br>
+            Right Balance = <input type="text" id="q3.rbal"><br>
+            <button type="button" onclick="question3();">Calculate</button>
+            <p id="q3.pmass"></p>
+            <p id="q3.lhdist"></p>
+        </div>
+    </div>
+    
+    <div class="dd" name="q4">
+        <h2 class="hh">Question 4</h2>
+        <div class="dd2">
+            Ball Mass = <input type="text" id="q4.bmass"><br>
+            Arm Length = <input type="text" id="q4.alen"><br>
+            Angle = <input type="text" id="q4.angle"><br>
+            L2 = <input type="text" id="q4.l2"><br>
+            Arm Mass = <input type="text" id="q4.amass"><br>
+            Center of Mass Distance = <input type="text" id="q4.cdist"><br>
+            <button type="button" onclick="question4();">Calculate</button>
+            <p id="q4.dmforce"></p>
+            <p id="q4.fh"></p>
+            <p id="q4.fv"></p>
+        </div>
+    </div>
+
+    <div class="dd" name="q5">
+        <h2 class="hh">Question 5</h2>
+        <div class="dd2">
+            Boom Mass = <input type="text" id="q5.bmass"><br>
+            Boom Length = <input type="text" id="q5.blen"><br>
+            Max Tension = <input type="text" id="q5.mtension"><br>
+            Angle = <input type="text" id="q5.angle"><br>
+            Cable Length from Pivot = <input type="text" id="q5.clen"><br>
+            <button type="button" onclick="question5();">Calculate</button>
+            <p id="q5.maxload"></p>
+            <p id="q5.fx"></p>
+            <p id="q5.fy"></p>
+        </div>
+    </div>
+
+    <div class="dd" name="q6">
+        <h2 class="hh">Question 6</h2>
+        <div class="dd2">
+            Mass 1 = <input type="text" id="q6.mass1"><br>
+            Theta Angle = <input type="text" id="q6.angle1"><br>
+            Alpha Angle = <input type="text" id="q6.angle2"><br>
+            Mass 2 = <input type="text" id="q6.mass2"><br>
+            <button type="button" onclick="question6();">Calculate</button>
+            <p id="q6.tension"></p>
+            <p id="q6.fx"></p>
+            <p id="q6.fy"></p>
+        </div>
+    </div>
+
+    <div class="dd" name="q7">
+        <h2 class="hh">Question 7</h2>
+        <div class="dd2">
+            Scale B = <input type="text" id="q7.scaleb"><br>
+            D1 = <input type="text" id="q7.d1"><br>
+            D2 = <input type="text" id="q7.d2"><br>
+            D3 = <input type="text" id="q7.d3"><br>
+            X = <input type="text" id="q7.x"><br>
+            Y = <input type="text" id="q7.y"><br>
+            <button type="button" onclick="question7();">Calculate</button>
+            <p id="q7.scalea"></p>
+            <p id="q7.z"></p>
+        </div>
+    </div>
+
+    <div class="dd" name="q8">
+        <h2 class="hh">Question 8</h2>
+        <div class="dd2">
+            Length L = <input type="text" id="q8.lenl"><br>
+            Weight 1 = <input type="text" id="q8.w1"><br>
+            Angle = <input type="text" id="q8.angle"><br>
+            Weight M = <input type="text" id="q8.wm"><br>
+            Max Tension = <input type="text" id="q8.maxtension"><br>
+            <button type="button" onclick="question8();">Calculate</button>
+            <p id="q8.maxd"></p>
+            <p id="q8.fx"></p>
+            <p id="q8.fy"></p>
+        </div>
+    </div>
+    
+    <div class="dd" name="q9">
+        <h2 class="hh">Question 9</h2>
+        <div class="dd2">
+            F1 = <input type="text" id="q9.f1"><br>
+            Angle = <input type="text" id="q9.angle"><br>
+            <button type="button" onclick="question9();">Calculate</button>
+            <p id="q9.f"></p>
+            <p id="q9.otherangle"></p>
+        </div>
+    </div>
+
+    <div class="dd" name="q10">
+        <h2 class="hh">Question 10</h2>
+
+        <div class="dd2">
+            F Total = <input type="text" id="q10.ftotal"><br>
+            F1 = <input type="text" id="q10.f1"><br>
+            F2 = <input type="text" id="q10.f2"><br>
+            Angle = <input type="text" id="q10.angle"><br>
+            <button type="button" onclick="question10();">Calculate</button>
+            <p id="q10.1"></p>
+            <p id="q10.2"></p>
+            <p id="q10.3"></p>
+        </div>
+    </div>
+    </div>
+</body>
+

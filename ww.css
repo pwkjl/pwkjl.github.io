@@ -1,0 +1,35 @@
+.center{
+    width: 50%;
+    margin: 0 auto;
+}
+
+.pic{
+    height: 10%;
+}
+
+.dindex{
+    font-family: 'Gloria Hallelujah', cursive;
+    margin: auto;
+    background: white;
+    text-align: center;
+    width: 50%;
+}
+
+.dd{
+    font-family: 'Gloria Hallelujah', cursive;
+    margin: auto;
+    width: 50%;
+    border:1px solid black;
+}
+
+.hh{
+    font-family: 'Gloria Hallelujah', cursive;
+    text-align: center;
+    margin: right;
+    width: 100%;
+}
+
+.dd2{
+    padding-left: 50px;
+    padding-right: 50px;
+}
