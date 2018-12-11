@@ -6,7 +6,7 @@ function question1(){
     var ls = Math.sqrt(9.8*l*2);
 
     document.getElementById("q1.lowspeed").innerHTML = ls + " m/s";
-    document.getElementById("q1.highspeed").innerHTML = Math.sqrt((ls-9.8*r*2)*2) + " m/s";
+    document.getElementById("q1.highspeed").innerHTML = Math.sqrt(((d-(l-d))*9.8)/0.5) + " m/s";
 }
 
 function question2(){
