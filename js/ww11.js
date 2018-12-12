@@ -77,12 +77,12 @@ function question6(){
 }
 
 function question7(){
-    var m1 = parseFloat(document.getElementById("q3.m1").value);
-    var m2 = parseFloat(document.getElementById("q3.m2").value);
-    var angle1 = parseFloat(document.getElementById("q3.a1").value) * (Math.PI / 180);
-    var vel = parseFloat(document.getElementById("q3.vel").value);
-    var angle2 = parseFloat(document.getElementById("q3.a2").value) * (Math.PI / 180);
-    var time = parseFloat(document.getElementById("q3.time").value);
+    var m1 = parseFloat(document.getElementById("q7.m1").value);
+    var m2 = parseFloat(document.getElementById("q7.m2").value);
+    var angle1 = parseFloat(document.getElementById("q7.a1").value) * (Math.PI / 180);
+    var vel = parseFloat(document.getElementById("q7.vel").value);
+    var angle2 = parseFloat(document.getElementById("q7.a2").value) * (Math.PI / 180);
+    var time = parseFloat(document.getElementById("q7.time").value);
 
     var vf = ((m2*Math.sin(angle2))/(m1*Math.sin(angle1)))*vel;
     var vi = vf * Math.cos(angle1)+(m2/m1)*Math.cos(angle2)*vel;
@@ -94,10 +94,10 @@ function question7(){
     var Fx = Jx / (time/1000);
     var Fy = Jy / (time/1000);
 
-    document.getElementById("q3.a").innerHTML = "a) " + vi + " i + " + 0 + " j m/s";
-    document.getElementById("q3.b").innerHTML = "b) " + vfx + " i + " + vfy/m1 + " j m/s";
-    document.getElementById("q3.c").innerHTML = "c) " + Jx + " i + " + Jy + " j Ns";
-    document.getElementById("q3.d").innerHTML = "d) " + Fx + " i + " + Fy + " j N";
-    document.getElementById("q3.e").innerHTML = "e) " + -Fx + " i + " + -Fy + " j N";
-    document.getElementById("q3.f").innerHTML = "f) " + -Jx + " i + " + -Jy + " j Ns";
+    document.getElementById("q7.a").innerHTML = "a) " + vi + " i + " + 0 + " j m/s";
+    document.getElementById("q7.b").innerHTML = "b) " + vfx + " i + " + vfy/m1 + " j m/s";
+    document.getElementById("q7.c").innerHTML = "c) " + Jx + " i + " + Jy + " j Ns";
+    document.getElementById("q7.d").innerHTML = "d) " + Fx + " i + " + Fy + " j N";
+    document.getElementById("q7.e").innerHTML = "e) " + -Fx + " i + " + -Fy + " j N";
+    document.getElementById("q7.f").innerHTML = "f) " + -Jx + " i + " + -Jy + " j Ns";
 }
